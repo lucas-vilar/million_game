@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    margin-top: 2rem;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: sans-serif;
+    background: radial-gradient(circle at center, rgb(0, 0, 116), #000);
+}
+
+table {
+    color: wheat;
+}
+
+td {
+    color: wheat;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    flex-flow: column nowrap;
+    font-family: sans-serif;
+    align-items: center;
+    background: radial-gradient(circle at center, rgb(0, 0, 116), #000);
+}
+
+header {
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    white-space: nowrap;
+    color: red;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 100%;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 7rem;
+    align-items: center;
+    width: 100%;
+}
+
+.botoes a{
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    border: solid #fab700 2px;
+    border-radius: 5px;
+    background-color: #fab700;
+}
+
+.botoes a:hover {
+    animation: ease-out;
+    color: white;
+    background-color: #333;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-color: #333;
+}
+
+.mensagem {
+    list-style-type: none;
+    font-weight: bolder;
+    color: wheat;
+}

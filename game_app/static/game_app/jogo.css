@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    flex-flow: column nowrap;
+    font-family: sans-serif;
+    background: radial-gradient(circle at center, rgb(0, 0, 116), #000);
+}
+
+header {
+    color: wheat;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.pergunta {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: wheat;
+    font-weight: bolder;
+}
+
+.pergunta a{
+    width: 50%;
+    background: linear-gradient(#df0000, #a30000);
+    border: solid linear-gradient(#df0000, #a30000) 3px;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin: 1rem;
+    color: wheat;
+    text-decoration: none;
+}
+
+.pergunta a:hover{
+    animation: ease-out;
+    color: white;
+    background-color: #a30000;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-color: #333;
+}
+
+.ajudas a:hover, .link-parar:hover {
+    animation: ease-out;
+    color: white;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-color: #333;
+}
+
+.ajudas {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    width: 100%;
+}
+
+.pular, .segundachance, .tiradois {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#15d400, #005e13);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: wheat;
+    text-decoration: none;
+    width: 33%;
+}
+
+.pontos {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.pontos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#df0000, #a30000);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: wheat;
+    text-decoration: none;
+    width: 33%;
+}
+
+.errar, .proximo {
+    cursor: default;
+}
+
+.sem-pulos, .sem-chance, .sem-tirar {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #626262;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: wheat;
+    text-decoration: none;
+    cursor: default;
+    width: 33%;
+}
+
+.mensagem {
+    list-style-type: none;
+    font-weight: bolder;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

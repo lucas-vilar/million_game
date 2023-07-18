@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'game_app/jogo.css' %}" >
+    <title>Pergunta </title>
+</head>
+<body>
+    <header>
+        Nível: {{nivel}} - {{pontuacao}}
+    </header>
+    <main>
+        {% if pergunta %}
+            <section class="pergunta">
+                <span class="titulo-pergunta"> {{pergunta}} </span>
+                <a href="{% url 'jogo' %}?resposta=A"> {{opcao1}} </a>
+                <a href="{% url 'jogo' %}?resposta=B"> {{opcao2}} </a>
+                <a href="{% url 'jogo' %}?resposta=C"> {{opcao3}} </a>
+                <a href="{% url 'jogo' %}?resposta=D"> {{opcao4}} </a>
+            </section>
+        {% endif %}
+        <section class="ajudas">
+            <a {% if n_pulos == 0 %} href="{% url 'jogo' %}" class="sem-pulos" {% else %} href="{% url 'jogo' %}?pular=True" class="pular"{% endif %}>Pular</a>
+            <a {% if segunda_chance == False %} href="{% url 'jogo' %}" class="sem-chance" {% else %} href="{% url 'jogo' %}?segundachance=True" class="segundachance"{% endif %}>Segunda chance</a>
+            <a {% if tira_dois == False %} href="{% url 'jogo' %}" class="sem-tirar" {% else %} href="{% url 'jogo' %}?tiradois=True" class="tiradois"{% endif %}>Tirar dois</a>
+        </section>
+        <section class="pontos">
+            <a href="#" class="errar">Errar {{pontuacao_perder}}</a>
+            {% if nivel > 1 %}
+                <a href="{% url 'jogo' %}?parar=True" class="link-parar">Parar {{pontuacao_parar}}</a>
+            {% endif %}
+            {% if 16 > nivel %}
+                <a href="#" class="proximo">Próximo {{pontuacao_proximo}}</a>
+            {% endif %}
+        </section>
+        <section class="mensagem">
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

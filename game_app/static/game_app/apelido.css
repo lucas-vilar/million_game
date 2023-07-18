@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: radial-gradient(circle at center, rgb(0, 0, 116), #000);
+}
+
+.form {
+    padding: 1rem;
+    border: solid red 3px;
+    border-radius: 4px;
+    color: wheat;
+}
+
+.botao-jogar {
+    display: flex;
+    white-space: nowrap;
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+    font-family: fantasy;
+    justify-content: center;
+    color: #333;
+    width: 30%;
+    border: solid #fab700 2px;
+    border-radius: 5px;
+    background-color: #fab700;
+}
+
+.botao-jogar:hover{
+    animation: ease-out;
+    color: white;
+    background-color: #333;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-color: #333;
+}
+
+.errorlist {
+    list-style-type: none;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.mensagem-apelido {
+    font-size: 0.8rem;
+}

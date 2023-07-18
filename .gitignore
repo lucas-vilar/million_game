@@ -1,0 +1,5 @@
+.env
+db.sqlite3
+game_app/__pycache__/
+milliongame/__pycache__/
+milliongame/migrations/__pycache__/

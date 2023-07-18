@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'game_app/ranking.css' %}">
+    <title>Ranking geral</title>
+</head>
+<body>
+    <main>
+        {% if jogador_list %}
+            <table>
+                <th>Apelido</th><th>Pontuação</th>
+                {% for jogador in jogador_list%}
+                    <tr>
+                        <td>{{jogador.apelido}} </td><td>{{jogador.pontos}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </main>
+</body>
+</html>
