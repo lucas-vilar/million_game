@@ -20,7 +20,7 @@ During the game, you have three types of help that you can use anytime (excpet i
 
 **Skip question (X3):** You can skip the current question to another one in the same category (You stay in the same level).
 
-**Second chance (X1):** If you choose a wrong answer, you didn't fail and can try another option.
+**Second chance (X1):** If you choose a wrong answer, you will not fail and can try another option.
 
 **Takes two (X1):** Removes two wrong options.
 
